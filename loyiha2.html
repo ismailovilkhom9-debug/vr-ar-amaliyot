@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Mening birinchi 3D xonam</title>
+  <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <!-- Osmon -->
+    <a-sky color="#DDEEFF"></a-sky>
+
+    <!-- Pol -->
+    <a-plane
+      rotation="-90 0 0"
+      width="20"
+      height="20"
+      color="#8BCB9B">
+    </a-plane>
+
+    <!-- Qizil kub -->
+    <a-box
+      position="-1 1 -4"
+      color="red"
+      rotation="0 30 0"
+      animation="property: rotation; to: 0 390 0; loop: true; dur: 5000">
+    </a-box>
+
+    <!-- Ko‘k shar -->
+    <a-sphere
+      position="1 1 -4"
+      radius="0.7"
+      color="blue">
+    </a-sphere>
+
+    <!-- Sariq silindr -->
+    <a-cylinder
+      position="3 0.8 -5"
+      radius="0.5"
+      height="1.6"
+      color="yellow">
+    </a-cylinder>
+
+    <!-- Kamera -->
+    <a-entity position="0 1.6 1">
+      <a-camera look-controls wasd-controls></a-camera>
+    </a-entity>
+  </a-scene>
+</body>
+</html>
